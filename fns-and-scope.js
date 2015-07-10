@@ -12,8 +12,8 @@ var isTyler = function(name) {
 	}
 	else {
 		return false;
-	}
-}
+	};
+};
 //Next problem
 
 
@@ -24,8 +24,8 @@ var isTyler = function(name) {
   //Code Here
 var getName = function() {
 	var userResp = prompt('What is your name?');
-	return userResp
-}
+	return userResp;
+};
 
 //Next Problem
 
@@ -35,7 +35,9 @@ var getName = function() {
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+var welcome = function() {
+	alert("Welcome" + " " + getName());
+};
 
 //Next problem
 
@@ -45,7 +47,8 @@ var getName = function() {
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+parameters are local scope variables definied by the function, 
+and arguments are the values passed to the function in place of the parameters
 
 //Next problem
 
@@ -56,7 +59,7 @@ var getName = function() {
 
   //Answer Here
 NaN, null, undefined, 0, ""(emptystring), false
-
+NEEEEEEEEEEEEEEEEEEEEEEEEEEED MORE WORDS  HERE
 
 //Next Problem
 
@@ -65,13 +68,15 @@ NaN, null, undefined, 0, ""(emptystring), false
 //Create a function called myName that returns your name
 
   //Code Here
-var myName = function ()
+var myName = function () {
+	return 'Wilson';
+};
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+newMyName = myName();
 //Now alert the result of invoking newMyName
-
+alert(newMyName);
 
 
 //Next problem
@@ -79,11 +84,18 @@ var myName = function ()
 
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
-
+var outerFN = function () {
+	function () { //there is a problem here on this line
+		return 'Wilson';
+	}
+};
   //Code Here
 
+
 //Now save the result of invoking outerFn into a variable called innerFn.
+var innerFn = outerFn();
 
   //Code Here
 
 //Now invoke innerFn.
+innerFn();
