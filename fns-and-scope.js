@@ -59,7 +59,7 @@ and arguments are the values passed to the function in place of the parameters
 
   //Answer Here
 NaN, null, undefined, 0, ""(emptystring), false
-NEEEEEEEEEEEEEEEEEEEEEEEEEEED MORE WORDS  HERE
+Unless one of the above values is given, the value will be truthy
 
 //Next Problem
 
@@ -84,18 +84,17 @@ alert(newMyName);
 
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
+
+  //Code Here
 var outerFN = function () {
-	function () { //there is a problem here on this line
+	return function () { 
 		return 'Wilson';
-	}
+	};
 };
-  //Code Here
-
-
 //Now save the result of invoking outerFn into a variable called innerFn.
-var innerFn = outerFn();
+
 
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
 innerFn();
